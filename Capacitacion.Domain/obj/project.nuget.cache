@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X82rl40gHuY=",
+  "success": true,
+  "projectFilePath": "/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Domain/Capacitacion.Domain.csproj",
+  "expectedPackageFiles": [
+    "/home/jvergara/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
