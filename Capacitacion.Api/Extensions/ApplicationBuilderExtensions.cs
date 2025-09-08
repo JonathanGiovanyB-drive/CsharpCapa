@@ -1,4 +1,6 @@
 using System.Threading.Tasks;
+using Capacitacion.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 namespace Capacitacion.Api.Extensions;
 
@@ -8,7 +10,7 @@ public static class ApplicationBuilderExtensions
     {
         using (var scope = app.ApplicationServices.CreateScope())
         {
-            var services = scope.serviceProvider;
+            var services = scope.ServiceProvider;
             var loggerFactory = services.GetRequiredService<ILoggerFactory>();
 
             try

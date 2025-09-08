@@ -1,3 +1,4 @@
+using Capacitacion.Api.Extensions;
 using Capacitacion.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.ApplyMigration();
 
 app.UseHttpsRedirection();
 
