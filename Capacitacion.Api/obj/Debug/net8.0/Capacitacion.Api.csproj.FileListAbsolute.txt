@@ -126,7 +126,11 @@ C:/Users/JVERGARA/source/repos/JonathanGiovanyB-drive/proyecto-Capacitacion/Solu
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Api.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Api.pdb
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/EFCore.NamingConventions.dll
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/FluentValidation.dll
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Humanizer.dll
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/MediatR.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/MediatR.Contracts.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll
@@ -212,9 +216,11 @@ C:/Users/JVERGARA/source/repos/JonathanGiovanyB-drive/proyecto-Capacitacion/Solu
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Application.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Domain.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Infrastructure.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Infrastructure.pdb
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Application.pdb
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Domain.pdb
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/obj/Debug/net8.0/Capacitacion.Api.csproj.AssemblyReference.cache
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/obj/Debug/net8.0/Capacitacion.Api.GeneratedMSBuildEditorConfig.editorconfig

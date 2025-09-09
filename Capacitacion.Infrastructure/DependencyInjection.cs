@@ -1,4 +1,7 @@
 ﻿
+using Capacitacion.Domain.Abstractions;
+using Capacitacion.Domain.Usuarios;
+using Capacitacion.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +28,8 @@ namespace Capacitacion.Infrastructure
                     .UseSnakeCaseNamingConvention();
                     
                 });
+            services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<CapacitacionDbContext>());
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
                 return services;
             }
