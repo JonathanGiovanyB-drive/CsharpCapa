@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Capacitacion.Infrastructure.Migrations
 {
     [DbContext(typeof(CapacitacionDbContext))]
-    [Migration("20250905222101_initialUsuarios")]
-    partial class initialUsuarios
+    [Migration("20250908222308_CapacitacionMigracion")]
+    partial class CapacitacionMigracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,19 +29,24 @@ namespace Capacitacion.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("char(36)")
+                        .HasColumnName("id");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("longtext")
+                        .HasColumnName("name");
 
                     b.Property<int>("Nivel")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("nivel");
 
                     b.Property<Guid>("UsuarioId")
-                        .HasColumnType("char(36)");
+                        .HasColumnType("char(36)")
+                        .HasColumnName("usuario_id");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("pk_roles");
 
                     b.ToTable("roles", (string)null);
                 });
@@ -50,18 +55,23 @@ namespace Capacitacion.Infrastructure.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("char(36)")
+                        .HasColumnName("id");
 
                     b.Property<string>("Email")
-                        .HasColumnType("longtext");
+                        .HasColumnType("longtext")
+                        .HasColumnName("email");
 
                     b.Property<string>("Name")
-                        .HasColumnType("longtext");
+                        .HasColumnType("longtext")
+                        .HasColumnName("name");
 
                     b.Property<string>("Password")
-                        .HasColumnType("longtext");
+                        .HasColumnType("longtext")
+                        .HasColumnName("password");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("pk_usuarios");
 
                     b.ToTable("usuarios", (string)null);
                 });
@@ -69,14 +79,18 @@ namespace Capacitacion.Infrastructure.Migrations
             modelBuilder.Entity("RolUsuario", b =>
                 {
                     b.Property<Guid>("RolesId")
-                        .HasColumnType("char(36)");
+                        .HasColumnType("char(36)")
+                        .HasColumnName("roles_id");
 
                     b.Property<Guid>("UsuariosId")
-                        .HasColumnType("char(36)");
+                        .HasColumnType("char(36)")
+                        .HasColumnName("usuarios_id");
 
-                    b.HasKey("RolesId", "UsuariosId");
+                    b.HasKey("RolesId", "UsuariosId")
+                        .HasName("pk_usuario_roles");
 
-                    b.HasIndex("UsuariosId");
+                    b.HasIndex("UsuariosId")
+                        .HasDatabaseName("ix_usuario_roles_usuarios_id");
 
                     b.ToTable("usuario_roles", (string)null);
                 });
@@ -87,13 +101,15 @@ namespace Capacitacion.Infrastructure.Migrations
                         .WithMany()
                         .HasForeignKey("RolesId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("fk_usuario_roles_roles_roles_id");
 
                     b.HasOne("Capacitacion.Domain.Usuarios.Usuario", null)
                         .WithMany()
                         .HasForeignKey("UsuariosId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .IsRequired()
+                        .HasConstraintName("fk_usuario_roles_usuario_usuarios_id");
                 });
 #pragma warning restore 612, 618
         }

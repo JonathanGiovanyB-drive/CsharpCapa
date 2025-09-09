@@ -4,6 +4,6 @@ namespace Capacitacion.Domain.Abstractions
 {
     public interface IUnitOfWork
     {
-        Task<int> SaveChangeAsync(CancellationToken cancellationToken);
+        Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }

@@ -21,9 +21,9 @@ namespace Capacitacion.Infrastructure
 
                     opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
                     .EnableSensitiveDataLogging()
-                    .EnableDetailedErrors();
-
-
+                    .EnableDetailedErrors()
+                    .UseSnakeCaseNamingConvention();
+                    
                 });
 
                 return services;
