@@ -1,5 +1,8 @@
 ﻿
 using Capacitacion.Domain.Abstractions;
+using Capacitacion.Domain.Categories;
+using Capacitacion.Domain.Products;
+using Capacitacion.Domain.Roles;
 using Capacitacion.Domain.Usuarios;
 using Capacitacion.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +33,9 @@ namespace Capacitacion.Infrastructure
                 });
             services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<CapacitacionDbContext>());
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IRolRepository, RolRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
 
                 return services;
             }

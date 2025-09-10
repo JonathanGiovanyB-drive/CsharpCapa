@@ -1,6 +1,5 @@
 
 
-using System.Data;
 using Capacitacion.Domain.Usuarios;
 using Microsoft.EntityFrameworkCore;
 
@@ -18,11 +17,15 @@ internal sealed class UsuarioRepository : Repository<Usuario>, IUsuarioRepositor
         return await dbContext.Set<Usuario>().ToListAsync(cancellationToken);       
     }
 
-    public async Task<Usuario?> GetByCode(string id, CancellationToken cancellationToken)
+   public async Task<Usuario?> GetByCode(string id, CancellationToken cancellationToken)
     {
-        Guid guiId = Guid.Parse(id);
+        if (!Guid.TryParse(id, out Guid guidId))
+        {
+            return null; // También puedes lanzar una excepción si prefieres manejarlo explícitamente
+        }
 
-        return await dbContext.Set<Usuario>().Where(x => x.Id == guiId).FirstOrDefaultAsync(cancellationToken);
+        return await dbContext.Set<Usuario>()
+            .FirstOrDefaultAsync(x => x.Id == guidId, cancellationToken);
     }
 }
 

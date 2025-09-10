@@ -22,6 +22,63 @@ namespace Capacitacion.Infrastructure.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("Capacitacion.Domain.Categories.Category", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)")
+                        .HasColumnName("id");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext")
+                        .HasColumnName("name");
+
+                    b.HasKey("Id")
+                        .HasName("pk_categories");
+
+                    b.ToTable("categories", (string)null);
+                });
+
+            modelBuilder.Entity("Capacitacion.Domain.Products.Product", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)")
+                        .HasColumnName("id");
+
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("char(36)")
+                        .HasColumnName("category_id");
+
+                    b.Property<string>("Code")
+                        .HasColumnType("longtext")
+                        .HasColumnName("code");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext")
+                        .HasColumnName("description");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("longtext")
+                        .HasColumnName("image_url");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext")
+                        .HasColumnName("name");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("decimal(65,30)")
+                        .HasColumnName("price");
+
+                    b.HasKey("Id")
+                        .HasName("pk_products");
+
+                    b.HasIndex("CategoryId")
+                        .HasDatabaseName("ix_products_category_id");
+
+                    b.ToTable("products", (string)null);
+                });
+
             modelBuilder.Entity("Capacitacion.Domain.Roles.Rol", b =>
                 {
                     b.Property<Guid>("Id")
@@ -90,6 +147,16 @@ namespace Capacitacion.Infrastructure.Migrations
                         .HasDatabaseName("ix_usuario_roles_usuarios_id");
 
                     b.ToTable("usuario_roles", (string)null);
+                });
+
+            modelBuilder.Entity("Capacitacion.Domain.Products.Product", b =>
+                {
+                    b.HasOne("Capacitacion.Domain.Categories.Category", null)
+                        .WithMany()
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("fk_products_categories_category_id");
                 });
 
             modelBuilder.Entity("RolUsuario", b =>
