@@ -11,10 +11,19 @@
           "Capacitacion.Application": "1.0.0",
           "Capacitacion.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.19",
-          "Swashbuckle.AspNetCore": "6.6.2"
+          "Swashbuckle.AspNetCore": "6.6.2",
+          "Bogus": "35.6.0"
         },
         "runtime": {
           "Capacitacion.Api.dll": {}
+        }
+      },
+      "Bogus/35.6.0": {
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "assemblyVersion": "35.6.0.0",
+            "fileVersion": "35.6.0.0"
+          }
         }
       },
       "EFCore.NamingConventions/8.0.3": {
@@ -696,6 +705,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Bogus/35.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WiK99a8LedzzG7QbnJ1OZT02WZHjr8V6L+cmGJbuga7TtI+Whd+KFWNmVPtXKACFNjz2c/FIR6QDNJsHD6Eazg==",
+      "path": "bogus/35.6.0",
+      "hashPath": "bogus.35.6.0.nupkg.sha512"
     },
     "EFCore.NamingConventions/8.0.3": {
       "type": "package",

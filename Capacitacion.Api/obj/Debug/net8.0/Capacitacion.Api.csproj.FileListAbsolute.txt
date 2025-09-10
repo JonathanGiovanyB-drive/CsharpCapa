@@ -125,6 +125,7 @@ C:/Users/JVERGARA/source/repos/JonathanGiovanyB-drive/proyecto-Capacitacion/Solu
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Api.runtimeconfig.json
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Api.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Capacitacion.Api.pdb
+/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/Bogus.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/EFCore.NamingConventions.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/FluentValidation.dll
 /home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/bin/Debug/net8.0/FluentValidation.AspNetCore.dll

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3mRKzikZgZs=",
+  "dgSpecHash": "RUwfAO+x04A=",
   "success": true,
   "projectFilePath": "/home/jvergara/Capacitacion/proyectos/proyectosCsharp/proyecto-Capacitacion/Solution1/Capacitacion.Api/Capacitacion.Api.csproj",
   "expectedPackageFiles": [
+    "/home/jvergara/.nuget/packages/bogus/35.6.0/bogus.35.6.0.nupkg.sha512",
     "/home/jvergara/.nuget/packages/efcore.namingconventions/8.0.3/efcore.namingconventions.8.0.3.nupkg.sha512",
     "/home/jvergara/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/home/jvergara/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

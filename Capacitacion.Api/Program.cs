@@ -29,7 +29,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.ApplyMigration();
-
+await app.SeedCapacitacionProducto();
 app.MapControllers();
-
 app.Run();
