@@ -1,6 +1,6 @@
 @Capacitacion.Api_HostAddress = http://localhost:5143
 
-GET {{Capacitacion.Api_HostAddress}}/weatherforecast/
+GET {{ Capacitacion.Api_HostAddress }}api/products/code?value=1234123
 Accept: application/json
 
 ###

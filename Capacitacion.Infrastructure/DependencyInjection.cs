@@ -32,10 +32,10 @@ namespace Capacitacion.Infrastructure
                     
                 });
             services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<CapacitacionDbContext>());
-            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-            services.AddScoped<IRolRepository, RolRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            // services.AddScoped<IRolRepository, RolRepository>();
+            // services.AddScoped<ICategoryRepository, CategoryRepository>();
 
                 return services;
             }
