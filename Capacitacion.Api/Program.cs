@@ -31,4 +31,6 @@ if (app.Environment.IsDevelopment())
 app.ApplyMigration();
 await app.SeedCapacitacionProducto();
 app.MapControllers();
+app.UseDefaultFiles();
+app.UseStaticFiles();
 app.Run();

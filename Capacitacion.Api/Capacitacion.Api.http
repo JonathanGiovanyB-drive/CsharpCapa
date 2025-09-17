@@ -1,6 +1,6 @@
 @Capacitacion.Api_HostAddress = http://localhost:5143
 
-GET {{ Capacitacion.Api_HostAddress }}api/products/code?value=1234123
+GET {{ Capacitacion.Api_HostAddress }}api/products/code?value=46L4IBBy
 Accept: application/json
 
 ###

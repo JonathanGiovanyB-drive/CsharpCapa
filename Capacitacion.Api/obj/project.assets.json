@@ -1065,6 +1065,7 @@
         "dependencies": {
           "Capacitacion.Domain": "1.0.0",
           "EFCore.NamingConventions": "8.0.3",
+          "MediatR": "12.4.0",
           "Microsoft.EntityFrameworkCore": "8.0.19",
           "Microsoft.Extensions.Configuration": "9.0.8",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.3"
