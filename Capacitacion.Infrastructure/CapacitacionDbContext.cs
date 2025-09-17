@@ -10,7 +10,6 @@ namespace Capacitacion.Infrastructure
     public sealed class CapacitacionDbContext : DbContext, IUnitOfWork
     {
         private readonly IPublisher _publisher;
-
         public CapacitacionDbContext(DbContextOptions options, IPublisher publisher) : base(options)
         {
             _publisher = publisher;
@@ -22,7 +21,7 @@ namespace Capacitacion.Infrastructure
             base.OnModelCreating(builder);
         }
 
-        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
         {
             var results = await base.SaveChangesAsync(cancellationToken);
             await PublishNotifications();
